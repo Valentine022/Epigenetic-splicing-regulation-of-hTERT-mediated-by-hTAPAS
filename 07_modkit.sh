@@ -15,7 +15,7 @@ module load minimap2/2.28
 
 # Define paths
 REF="/media/data_01/shared/GENOMES/homo_sapiens/T2T-CHM13v2.0/genome/T2T-CHM13v2.0.fasta"
-OUT_DIR="/media/data_01/vapatter/PROJECTS/15-LARS/178a_LE_hTERT_cd4t/T2T/DORADO_DEMUX"
+OUT_DIR="/media/data_01/vapatter/PROJECTS/15-LARS/125_NDLE_hTERT_CRISPR_VA13/T2T/DORADO_DEMUX"
 
 cd $OUT_DIR
 
@@ -26,7 +26,7 @@ for f in *aligned.bam.sorted.bam; do samtools index $f; done
 for f in *aligned.bam.sorted.bam; do modkit pileup $f \
 $f.bed --cpg --ref $REF; done
 
-OUT_DIR="/media/data_01/vapatter/PROJECTS/15-LARS/178a_LE_hTERT_cd4t/T2T"
+OUT_DIR="/media/data_01/vapatter/PROJECTS/15-LARS/125_NDLE_hTERT_CRISPR_VA13/T2T"
 
 cd $OUT_DIR
 
