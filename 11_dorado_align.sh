@@ -14,7 +14,7 @@ module load guppy
 module load pigz
 
 REF="/media/data_01/shared/GENOMES/homo_sapiens/T2T-CHM13v2.0/genome/T2T-CHM13v2.0.fasta"
-OUTPUT_DIR="/media/data_01/vapatter/PROJECTS/15-LARS/178a_LE_hTERT_cd4t/T2T/DORADO_DEMUX"
+OUTPUT_DIR="/media/data_01/vapatter/PROJECTS/15-LARS/125_NDLE_hTERT_CRISPR_VA13/T2T/DORADO_DEMUX"
 cd $OUTPUT_DIR
 
 for f in *bam; do dorado aligner $REF $f > $OUTPUT_DIR/$f.aligned.bam; done
